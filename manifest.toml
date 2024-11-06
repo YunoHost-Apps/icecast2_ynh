@@ -1,0 +1,59 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/master/schemas/manifest.v2.schema.json
+
+packaging_format = 2
+
+id = "icecast2"
+name = "Icecast2"
+description.en = "Server for streaming multimedia"
+description.fr = "Serveur de streaming multimédia"
+
+version = "2.4.4~ynh1"
+
+maintainers = ["eric-G"]
+
+[upstream]
+license = "free"
+website = "https://icecast.org/"
+admindoc = "https://icecast.org/docs/"
+code = "https://gitlab.xiph.org/xiph/icecast-server"
+
+[integration]
+yunohost = ">= 11.2.30"
+helpers_version = "2.1"
+architectures = "all"
+multi_instance = true
+
+ldap = false
+sso = false
+
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
+
+    [install.admin]
+    type = "user"
+
+    [install.password]
+    help.en = "Use the help field to add an information for the admin about this question."
+    help.fr = "Utilisez le champ aide pour ajouter une information à l'intention de l'administrateur à propos de cette question."
+    type = "password"
+
+[resources]
+
+    [resources.system_user]
+
+    [resources.permissions]
+    main.url = "/"
+
+    [resources.ports]
+
+    [resources.apt]
+    packages = "icecast2"
