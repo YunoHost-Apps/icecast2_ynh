@@ -19,6 +19,8 @@ ynh_config_add --template="icecast.xml" --destination="/etc/icecast2/icecast.xml
 chmod 400 "/etc/icecast2/icecast.xml"
 chown "$app:$app" "/etc/icecast2/icecast.xml"
 
+echo 'ENABLE=true' >> /etc/default/icecast2
+
 #=================================================
 # SYSTEM CONFIGURATION
 #=================================================

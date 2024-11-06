@@ -16,7 +16,8 @@ It shall NOT be edited by hand.
 
 ## Overview
 
-This is a dummy description of this app features
+Icecast is a streaming media (audio/video) server which currently supports Ogg (Vorbis and Theora), Opus, WebM and MP3 streams.
+It can be used to create an Internet radio station or a privately running jukebox and many things in between. It is very versatile in that new formats can be added relatively easily and supports open standards for communication and interaction.
 
 
 **Shipped version:** 2.4.4~ynh1
