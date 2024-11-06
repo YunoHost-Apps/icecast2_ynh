@@ -12,7 +12,7 @@ version = "2.4.4~ynh1"
 maintainers = ["eric-G"]
 
 [upstream]
-license = "free"
+license = "GPL-2.0"
 website = "https://icecast.org/"
 admindoc = "https://icecast.org/docs/"
 code = "https://gitlab.xiph.org/xiph/icecast-server"
