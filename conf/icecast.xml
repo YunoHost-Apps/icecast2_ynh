@@ -13,8 +13,8 @@
       </limits>
   
       <authentication>
-          <source-password>hackme</source-password>
-          <relay-password>hackme</relay-password>
+          <source-password>__PASSWORD__</source-password>
+          <relay-password>__PASSWORD__</relay-password>
           <admin-user>__ADMIN__</admin-user>
           <admin-password>__PASSWORD__</admin-password>
       </authentication>
