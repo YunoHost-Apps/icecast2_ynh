@@ -9,6 +9,7 @@ ynh_app_setting_set --key=password --value="$password"
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 
+install_dir="/var/www/icecast2"
 mkdir -p "$install_dir"
 
 chmod -R o-rwx "$install_dir"
