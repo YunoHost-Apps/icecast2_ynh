@@ -29,10 +29,10 @@
       <fileserve>1</fileserve>
   
       <paths>
-          <basedir>__INSTALLDIR__</basedir>
+          <basedir>__INSTALL_DIR__</basedir>
           <logdir>/var/log/__APP__</logdir>
-          <webroot>__INSTALLDIR__/web</webroot>
-          <adminroot>__INSTALLDIR__/admin</adminroot>
+          <webroot>__INSTALL_DIR__/web</webroot>
+          <adminroot>__INSTALL_DIR__/admin</adminroot>
           <!-- <alias source="/" dest="/index.html"/> -->
           <alias source="/" destination="/status.xsl"/>
       </paths>
