@@ -12,7 +12,8 @@ ynh_script_progression "Adding $app's configuration files..."
 
 ynh_config_add --template="icecast.xml" --destination="/etc/icecast2/icecast.xml"
 
-#echo 'ENABLE=true' >> /etc/default/icecast2
+echo 'ENABLE=true' >> /etc/default/icecast2
+
 mkdir -p /var/log/$app
 chown $app: /var/log/$app
 
@@ -32,11 +33,7 @@ yunohost service add "$app" --description="Server for streaming multimedia" --lo
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
 
-#ynh_systemctl --service="$app" --action="start"
-
-systemctl daemon-reload
-systemctl enable icecast2.service
-systemctl start  icecast2.service
+ynh_systemctl --service="$app" --action="start"
 
 #=================================================
 # END OF SCRIPT
