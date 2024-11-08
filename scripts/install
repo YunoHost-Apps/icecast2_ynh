@@ -40,7 +40,7 @@ yunohost service add "$app" --description="Server for streaming multimedia" --lo
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
 
-ynh_systemctl --service="icecast" --action="start"
+#ynh_systemctl --service="icecast" --action="start"
 
 #=================================================
 # END OF SCRIPT
