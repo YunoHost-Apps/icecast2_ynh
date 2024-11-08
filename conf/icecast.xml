@@ -31,6 +31,7 @@
       <mount type="normale">
         <mount-name>stream.mp3</mount-name>
         <stream-name>stream</stream-name>
+        <username>__ADMIN__</username>
         <password>__PASSWORD__</password>
         <public>1</public>
       </mount>
