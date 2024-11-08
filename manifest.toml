@@ -52,6 +52,7 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.ports]
+    main.default = 8000
 
     [resources.apt]
     packages = "icecast2"
