@@ -30,7 +30,7 @@
 
       <mount type="normale">
         <mount-name>stream.mp3</mount-name>
-        <stream-name>Mon stream</stream-name>
+        <stream-name>stream</stream-name>
         <password>__PASSWORD__</password>
         <public>1</public>
       </mount>
