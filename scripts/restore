@@ -8,6 +8,8 @@ source /usr/share/yunohost/helpers
 #=================================================
 ynh_script_progression "Restoring system configurations related to $app..."
 
+ynh_restore "/etc/icecast2/icecast.xml"
+
 ynh_restore "/etc/nginx/conf.d/$domain.d/$app.conf"
 
 ynh_restore "/etc/systemd/system/$app.service"
