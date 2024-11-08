@@ -16,7 +16,7 @@ chown $app: /var/log/$app
 #=================================================
 ynh_script_progression "Adding $app's configuration files..."
 
-ynh_config_add --template="icecast.xml" --destination="$data_dir/icecast.xml"
+ynh_config_add --template="icecast.xml" --destination="/etc/icecast2/icecast.xml"
 
 #echo 'ENABLE=true' >> /etc/default/icecast2
 
