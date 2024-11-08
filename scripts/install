@@ -3,14 +3,7 @@
 source _common.sh
 source /usr/share/yunohost/helpers
 
-
 ynh_app_setting_set --key=password --value="$password"
-
-#=================================================
-# DOWNLOAD, CHECK AND UNPACK SOURCE
-#=================================================
-
-chown $app: /var/log/$app
 
 #=================================================
 # APP INITIAL CONFIGURATION
@@ -19,10 +12,10 @@ ynh_script_progression "Adding $app's configuration files..."
 
 ynh_config_add --template="icecast.xml" --destination="/etc/icecast2/icecast.xml"
 
-chmod 400 "/etc/icecast2/icecast.xml"
-chown "$app:$app" "/etc/icecast2/icecast.xml"
-
 echo 'ENABLE=true' >> /etc/default/icecast2
+
+mkdir -p /var/log/$app
+chown $app: /var/log/$app
 
 #=================================================
 # SYSTEM CONFIGURATION
