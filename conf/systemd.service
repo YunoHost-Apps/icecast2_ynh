@@ -5,9 +5,9 @@ Wants=network.target network-online.target
 
 [Service]
 Type=exec
-User=__APP__
-Group=__APP__
-ExecStart=/usr/bin/icecast2 -c __DATA_DIR__/icecast.xml
+#User=__APP__
+#Group=__APP__
+ExecStart=/usr/bin/icecast2 -c /etc/icecast2/icecast.xml
 Restart=on-failure
 RestartSec=5
 StartLimitBurst=3
