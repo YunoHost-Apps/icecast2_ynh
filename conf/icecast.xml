@@ -47,8 +47,8 @@
       <security>
           <chroot>1</chroot>
           <changeowner>
-              <user>nobody</user>
-              <group>nogroup</group>
+              <user>__APP__</user>
+              <group>__APP__</group>
           </changeowner>
       </security>
   </icecast>
