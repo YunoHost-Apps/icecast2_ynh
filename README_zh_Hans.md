@@ -3,15 +3,15 @@
 请勿手动编辑。
 -->
 
-# YunoHost 上的 Icecast2
+# YunoHost 上的 Icecast
 
-[![集成程度](https://dash.yunohost.org/integration/icecast2.svg)](https://ci-apps.yunohost.org/ci/apps/icecast2/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/icecast2.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/icecast2.maintain.svg)
+[![集成程度](https://dash.yunohost.org/integration/icecast.svg)](https://ci-apps.yunohost.org/ci/apps/icecast/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/icecast.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/icecast.maintain.svg)
 
-[![使用 YunoHost 安装 Icecast2](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=icecast2)
+[![使用 YunoHost 安装 Icecast](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=icecast)
 
 *[阅读此 README 的其它语言版本。](./ALL_README.md)*
 
-> *通过此软件包，您可以在 YunoHost 服务器上快速、简单地安装 Icecast2。*  
+> *通过此软件包，您可以在 YunoHost 服务器上快速、简单地安装 Icecast。*  
 > *如果您还没有 YunoHost，请参阅[指南](https://yunohost.org/install)了解如何安装它。*
 
 ## 概况
@@ -24,26 +24,26 @@ It can be used to create an Internet radio station or a privately running jukebo
 
 ## 截图
 
-![Icecast2 的截图](./doc/screenshots/screenshot.png)
+![Icecast 的截图](./doc/screenshots/screenshot.png)
 
 ## 文档与资源
 
 - 官方应用网站： <https://icecast.org/>
 - 官方管理文档： <https://icecast.org/docs/>
 - 上游应用代码库： <https://gitlab.xiph.org/xiph/icecast-server>
-- YunoHost 商店： <https://apps.yunohost.org/app/icecast2>
-- 报告 bug： <https://github.com/YunoHost-Apps/icecast2_ynh/issues>
+- YunoHost 商店： <https://apps.yunohost.org/app/icecast>
+- 报告 bug： <https://github.com/YunoHost-Apps/icecast_ynh/issues>
 
 ## 开发者信息
 
-请向 [`testing` 分支](https://github.com/YunoHost-Apps/icecast2_ynh/tree/testing) 发送拉取请求。
+请向 [`testing` 分支](https://github.com/YunoHost-Apps/icecast_ynh/tree/testing) 发送拉取请求。
 
 如要尝试 `testing` 分支，请这样操作：
 
 ```bash
-sudo yunohost app install https://github.com/YunoHost-Apps/icecast2_ynh/tree/testing --debug
+sudo yunohost app install https://github.com/YunoHost-Apps/icecast_ynh/tree/testing --debug
 或
-sudo yunohost app upgrade icecast2 -u https://github.com/YunoHost-Apps/icecast2_ynh/tree/testing --debug
+sudo yunohost app upgrade icecast -u https://github.com/YunoHost-Apps/icecast_ynh/tree/testing --debug
 ```
 
 **有关应用打包的更多信息：** <https://yunohost.org/packaging_apps>
