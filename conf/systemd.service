@@ -1,17 +1,16 @@
 [Unit]
-Description=Icecast server
+Description=Icecast2 streaming media server
+Before=multi-user.target
+Before=graphical.target
+After=remote-fs.target
 After=network-online.target
-Wants=network.target network-online.target
+Wants=network-online.target
 
 [Service]
-Type=exec
 User=__APP__
 Group=__APP__
+Type=exec
 ExecStart=/usr/bin/icecast2 -c /etc/icecast2/icecast.xml
-Restart=on-failure
-RestartSec=5
-StartLimitBurst=3
-StartLimitInterval=60s
 
 [Install]
 WantedBy=multi-user.target

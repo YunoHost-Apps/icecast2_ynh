@@ -6,12 +6,6 @@ source /usr/share/yunohost/helpers
 ynh_app_setting_set --key=password --value="$password"
 
 #=================================================
-# DOWNLOAD, CHECK AND UNPACK SOURCE
-#=================================================
-
-chown $app: /var/log/$app
-
-#=================================================
 # APP INITIAL CONFIGURATION
 #=================================================
 ynh_script_progression "Adding $app's configuration files..."
@@ -19,6 +13,8 @@ ynh_script_progression "Adding $app's configuration files..."
 ynh_config_add --template="icecast.xml" --destination="/etc/icecast2/icecast.xml"
 
 #echo 'ENABLE=true' >> /etc/default/icecast2
+mkdir /var/log/$app
+chown $app: /var/log/$app
 
 #=================================================
 # SYSTEM CONFIGURATION
@@ -36,7 +32,11 @@ yunohost service add "$app" --description="Server for streaming multimedia" --lo
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
 
-ynh_systemctl --service="$app" --action="start"
+#ynh_systemctl --service="$app" --action="start"
+
+systemctl daemon-reload
+systemctl enable icecast2.service
+systemctl start  icecast2.service
 
 #=================================================
 # END OF SCRIPT
