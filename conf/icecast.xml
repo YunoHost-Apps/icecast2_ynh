@@ -23,11 +23,18 @@
   
       <listen-socket>
           <port>__PORT__</port>
-          <shoutcast-mount>/live.mp3</shoutcast-mount>
       </listen-socket>
   
       <fileserve>1</fileserve>
   
+
+      <mount type="normale">
+        <mount-name>stream.mp3</mount-name>
+        <stream-name>Mon stream</stream-name>
+        <password>__PASSWORD__</password>
+        <public>1</public>
+      </mount>
+
       <paths>
           <basedir>/etc/icecast2</basedir>
           <logdir>/var/log/__APP__</logdir>
