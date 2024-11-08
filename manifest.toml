@@ -2,8 +2,8 @@
 
 packaging_format = 2
 
-id = "icecast2"
-name = "Icecast2"
+id = "icecast"
+name = "Icecast"
 description.en = "Server for streaming multimedia"
 description.fr = "Serveur de streaming multimédia"
 
