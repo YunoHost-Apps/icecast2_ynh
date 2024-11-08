@@ -9,7 +9,8 @@ ynh_app_setting_set --key=password --value="$password"
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 
-#chown $app: /var/log/$app
+mkdir -p /var/log/$app
+chown $app: /var/log/$app
 
 #=================================================
 # APP INITIAL CONFIGURATION
