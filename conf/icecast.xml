@@ -23,15 +23,16 @@
   
       <listen-socket>
           <port>__PORT__</port>
+          <shoutcast-mount>/live.mp3</shoutcast-mount>
       </listen-socket>
   
       <fileserve>1</fileserve>
   
       <paths>
-          <basedir>/usr/local/share/icecast</basedir>
+          <basedir>__INSTALLDIR__</basedir>
           <logdir>/var/log/__APP__</logdir>
-          <webroot>/usr/share/icecast2/web</webroot>
-          <adminroot>/usr/share/icecast2/admin</adminroot>
+          <webroot>__INSTALLDIR__/web</webroot>
+          <adminroot>__INSTALLDIR__/admin</adminroot>
           <!-- <alias source="/" dest="/index.html"/> -->
           <alias source="/" destination="/status.xsl"/>
       </paths>
