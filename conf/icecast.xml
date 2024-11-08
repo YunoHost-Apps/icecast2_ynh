@@ -29,10 +29,11 @@
   
       <paths>
           <basedir>/usr/local/share/icecast</basedir>
-          <logdir>/log</logdir>
-          <webroot>/web</webroot>
-          <adminroot>/admin</adminroot>
-          <alias source="/" dest="/index.html"/>
+          <logdir>/var/log/__APP__</logdir>
+          <webroot>/usr/share/icecast2/web</webroot>
+          <adminroot>/usr/share/icecast2/admin</adminroot>
+          <!-- <alias source="/" dest="/index.html"/> -->
+          <alias source="/" destination="/status.xsl"/>
       </paths>
   
       <logging>
