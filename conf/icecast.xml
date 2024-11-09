@@ -39,9 +39,9 @@
 
     <authentication>
         <!-- Sources log in with username 'source' -->
-        <source-password>hackme</source-password>
+        <source-password>__PASSWORD__</source-password>
         <!-- Relays log in with username 'relay' -->
-        <relay-password>hackme</relay-password>
+        <relay-password>__PASSWORD__</relay-password>
 
         <!-- Admin logs in with the username given below -->
         <admin-user>__ADMIN__</admin-user>
@@ -67,7 +67,7 @@
     <!-- You may have multiple <listen-socket> elements -->
     <listen-socket>
         <port>__PORT__</port>
-        <bind-address>127.0.0.1</bind-address>
+        <!-- <bind-address>127.0.0.1</bind-address> -->
         <!-- <shoutcast-mount>/stream</shoutcast-mount> -->
     </listen-socket>
     <!--
