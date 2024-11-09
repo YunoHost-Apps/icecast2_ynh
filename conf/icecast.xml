@@ -306,13 +306,11 @@
 
         <tls-context>
             <!-- The certificate file containng public and optionally private key.
-                Must be PEM encoded.
-                <tls-certificate>@pkgdatadir@/icecast.pem</tls-certificate>
-            -->
+                Must be PEM encoded. -->
+                <tls-certificate>/etc/yunohost/certs/__DOMAIN__/crt.pem</tls-certificate>
             <!-- The private key if not contained in <tls-certificate>.
-                Must be PEM encoded.
-                <tls-key>@pkgdatadir@/icecast.key</tls-key>
-            -->
+                Must be PEM encoded. -->
+                <tls-key>/etc/yunohost/certs/__DOMAIN__/key.pem</tls-key>
         </tls-context>
 
         <!-- It is generally helpful to set a PRNG seed, what seed to set depends on your OS. -->
