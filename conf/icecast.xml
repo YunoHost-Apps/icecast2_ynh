@@ -39,9 +39,9 @@
 
     <authentication>
         <!-- Sources log in with username 'source' -->
-        <source-password>hackme</source-password>
+        <source-password>__PASSWORD__</source-password>
         <!-- Relays log in with username 'relay' -->
-        <relay-password>hackme</relay-password>
+        <relay-password>__PASSWORD__</relay-password>
 
         <!-- Admin logs in with the username given below -->
         <admin-user>__ADMIN__</admin-user>
@@ -67,7 +67,7 @@
     <!-- You may have multiple <listen-socket> elements -->
     <listen-socket>
         <port>__PORT__</port>
-        <bind-address>127.0.0.1</bind-address>
+        <!-- <bind-address>127.0.0.1</bind-address> -->
         <!-- <shoutcast-mount>/stream</shoutcast-mount> -->
     </listen-socket>
     <!--
@@ -177,44 +177,12 @@
     -->
 
     <!-- Normal mounts -->
-    <!--
     <mount type="normal">
-        <mount-name>/example-complex.ogg</mount-name>
-
-        <max-listeners>1</max-listeners>
-        <dump-file>/tmp/dump-example1.ogg</dump-file>
-        <burst-size>65536</burst-size>
-        <fallback-mount>/example2.ogg</fallback-mount>
-        <fallback-override>true</fallback-override>
-        <fallback-when-full>true</fallback-when-full>
-        <intro>/example_intro.ogg</intro>
-        <hidden>true</hidden>
+        <mount-name>/stream.ogg</mount-name>
+        <stream-name>stream</stream-name>
+        <password>__PASSWORD__</password>
         <public>true</public>
-        <authentication>
-            <role type="htpasswd" connections-per-user="1">
-                <option name="filename" value="myauth" />
-            </role>
-            <role type="static" allow-method="source,put,get,post,options" deny-web="*" allow-admin="*">
-                <option name="username" value="othersource" />
-                <option name="passwod" value="hackmemore" />
-            </role>
-            <role type="anonymous" deny-all="*" />
-        </authentication>
-        <http-headers>
-                <header type="cors" name="Access-Control-Allow-Origin" value="http://webplayer.example.org" />
-                <header name="baz" value="quux" />
-        </http-headers>
-
-        <event-bindings>
-            <event type="exec" trigger="source-connect">
-                <option name="executable" value="/home/icecast/bin/stream-start" />
-            </event>
-            <event type="exec" trigger="source-disconnect">
-                <option name="executable" value="/home/icecast/bin/stream-stop" />
-            </event>
-        </event-bindings>
     </mount>
-    -->
 
     <!--
     <mount type="normal">
@@ -306,13 +274,11 @@
 
         <tls-context>
             <!-- The certificate file containng public and optionally private key.
-                Must be PEM encoded.
-                <tls-certificate>@pkgdatadir@/icecast.pem</tls-certificate>
-            -->
+                Must be PEM encoded. -->
+                <tls-certificate>/etc/yunohost/certs/__DOMAIN__/crt.pem</tls-certificate>
             <!-- The private key if not contained in <tls-certificate>.
-                Must be PEM encoded.
-                <tls-key>@pkgdatadir@/icecast.key</tls-key>
-            -->
+                Must be PEM encoded. -->
+                <tls-key>/etc/yunohost/certs/__DOMAIN__/key.pem</tls-key>
         </tls-context>
 
         <!-- It is generally helpful to set a PRNG seed, what seed to set depends on your OS. -->
