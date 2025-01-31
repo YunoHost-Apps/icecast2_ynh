@@ -5,7 +5,9 @@
 
 # Icecast2 для YunoHost
 
-[![Уровень интеграции](https://dash.yunohost.org/integration/icecast2.svg)](https://ci-apps.yunohost.org/ci/apps/icecast2/) ![Состояние работы](https://ci-apps.yunohost.org/ci/badges/icecast2.status.svg) ![Состояние сопровождения](https://ci-apps.yunohost.org/ci/badges/icecast2.maintain.svg)
+[![Уровень интеграции](https://apps.yunohost.org/badge/integration/icecast2)](https://ci-apps.yunohost.org/ci/apps/icecast2/)
+![Состояние работы](https://apps.yunohost.org/badge/state/icecast2)
+![Состояние сопровождения](https://apps.yunohost.org/badge/maintained/icecast2)
 
 [![Установите Icecast2 с YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=icecast2)
 

@@ -5,7 +5,9 @@
 
 # YunoHost 上的 Icecast2
 
-[![集成程度](https://dash.yunohost.org/integration/icecast2.svg)](https://ci-apps.yunohost.org/ci/apps/icecast2/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/icecast2.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/icecast2.maintain.svg)
+[![集成程度](https://apps.yunohost.org/badge/integration/icecast2)](https://ci-apps.yunohost.org/ci/apps/icecast2/)
+![工作状态](https://apps.yunohost.org/badge/state/icecast2)
+![维护状态](https://apps.yunohost.org/badge/maintained/icecast2)
 
 [![使用 YunoHost 安装 Icecast2](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=icecast2)
 

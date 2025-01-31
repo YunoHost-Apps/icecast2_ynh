@@ -5,7 +5,9 @@ EZ editatu eskuz.
 
 # Icecast2 YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/icecast2.svg)](https://ci-apps.yunohost.org/ci/apps/icecast2/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/icecast2.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/icecast2.maintain.svg)
+[![Integrazio maila](https://apps.yunohost.org/badge/integration/icecast2)](https://ci-apps.yunohost.org/ci/apps/icecast2/)
+![Funtzionamendu egoera](https://apps.yunohost.org/badge/state/icecast2)
+![Mantentze egoera](https://apps.yunohost.org/badge/maintained/icecast2)
 
 [![Instalatu Icecast2 YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=icecast2)
 

@@ -5,7 +5,9 @@ Il NE doit PAS être modifié à la main.
 
 # Icecast2 pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/icecast2.svg)](https://ci-apps.yunohost.org/ci/apps/icecast2/) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/icecast2.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/icecast2.maintain.svg)
+[![Niveau d’intégration](https://apps.yunohost.org/badge/integration/icecast2)](https://ci-apps.yunohost.org/ci/apps/icecast2/)
+![Statut du fonctionnement](https://apps.yunohost.org/badge/state/icecast2)
+![Statut de maintenance](https://apps.yunohost.org/badge/maintained/icecast2)
 
 [![Installer Icecast2 avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=icecast2)
 

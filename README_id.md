@@ -5,7 +5,9 @@ Ini TIDAK boleh diedit dengan tangan.
 
 # Icecast2 untuk YunoHost
 
-[![Tingkat integrasi](https://dash.yunohost.org/integration/icecast2.svg)](https://ci-apps.yunohost.org/ci/apps/icecast2/) ![Status kerja](https://ci-apps.yunohost.org/ci/badges/icecast2.status.svg) ![Status pemeliharaan](https://ci-apps.yunohost.org/ci/badges/icecast2.maintain.svg)
+[![Tingkat integrasi](https://apps.yunohost.org/badge/integration/icecast2)](https://ci-apps.yunohost.org/ci/apps/icecast2/)
+![Status kerja](https://apps.yunohost.org/badge/state/icecast2)
+![Status pemeliharaan](https://apps.yunohost.org/badge/maintained/icecast2)
 
 [![Pasang Icecast2 dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=icecast2)
 

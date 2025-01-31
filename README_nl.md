@@ -5,7 +5,9 @@ Hij mag NIET handmatig aangepast worden.
 
 # Icecast2 voor Yunohost
 
-[![Integratieniveau](https://dash.yunohost.org/integration/icecast2.svg)](https://ci-apps.yunohost.org/ci/apps/icecast2/) ![Mate van functioneren](https://ci-apps.yunohost.org/ci/badges/icecast2.status.svg) ![Onderhoudsstatus](https://ci-apps.yunohost.org/ci/badges/icecast2.maintain.svg)
+[![Integratieniveau](https://apps.yunohost.org/badge/integration/icecast2)](https://ci-apps.yunohost.org/ci/apps/icecast2/)
+![Mate van functioneren](https://apps.yunohost.org/badge/state/icecast2)
+![Onderhoudsstatus](https://apps.yunohost.org/badge/maintained/icecast2)
 
 [![Icecast2 met Yunohost installeren](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=icecast2)
 
